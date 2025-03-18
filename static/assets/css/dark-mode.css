@@ -1,0 +1,98 @@
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.dark-mode a {
+  color: #88c0d0;
+}
+
+body.dark-mode nav.main-nav {
+  background: #1a1a1a;
+  background: rgba(26, 26, 26, .90);
+}
+
+body.dark-mode nav.main-nav a {
+  color: #e0e0e0;
+}
+
+body.dark-mode nav.main-nav a.cta {
+  background: #1a1a1a;
+  color: #ee4792;
+  border: 2px solid #7a3349;
+}
+
+body.dark-mode nav.main-nav a.cta:hover {
+  background: #7a3349;
+  color: #ee4792;
+}
+
+body.dark-mode blockquote {
+  border-left: 3px solid #444;
+  color: #999;
+}
+
+body.dark-mode hr {
+  border-color: #333;
+}
+
+body.dark-mode span.divider {
+  background: #444;
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, 
+body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
+  color: #e0e0e0;
+}
+
+body.dark-mode pre {
+  background-color: #2a2a2a;
+}
+
+body.dark-mode code.highlighter-rouge {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+body.dark-mode tr:nth-child(odd)>td {
+  background: #2a2a2a;
+}
+
+body.dark-mode th, body.dark-mode td {
+  border-bottom: 1px solid #333;
+}
+
+body.dark-mode thead th, body.dark-mode th {
+  background: #2a2a2a;
+}
+
+body.dark-mode p.read-more a {
+  color: #ff79b0;
+}
+
+body.dark-mode p.read-more a:hover {
+  color: #ff9ac3;
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 12px;
+  vertical-align: middle;
+  color: inherit;
+  font-size: 13px;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.dark-mode-toggle svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle:hover svg {
+  transform: rotate(15deg);
+} 
