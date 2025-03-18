@@ -74,6 +74,32 @@ body.dark-mode p.read-more a:hover {
   color: #ff9ac3;
 }
 
+/* Improved contrast for text */
+body.dark-mode b, 
+body.dark-mode strong {
+  color: #ffffff;
+}
+
+body.dark-mode .dates {
+  color: #aaa;
+}
+
+body.dark-mode .profile h4 {
+  color: #cccccc;
+}
+
+/* Fix for text with low contrast */
+body.dark-mode {
+  /* Override any potentially problematic text colors with higher contrast */
+  --text-color-high-contrast: #e8e8e8;
+}
+
+body.dark-mode p, 
+body.dark-mode li, 
+body.dark-mode span:not(.arrow):not(.divider) {
+  color: var(--text-color-high-contrast);
+}
+
 /* Dark mode toggle button */
 .dark-mode-toggle {
   display: inline-flex;
