@@ -1,19 +1,41 @@
-This is just Manton Reece's [Marfa theme for Hugo](https://github.com/microdotblog/theme-marfa) with the references to [micro.blog](https://micro.blog) removed, in case you want to use it as a clean, unpromoted theme. 
+# MicroCactus Hugo Theme
 
-Here's the README.md from his original theme:
+A clean, minimal Hugo theme based on the [theme-marfa-demicroed](https://github.com/washchuk/theme-marfa-demicroed) with additional features:
 
-# _Neo Cactus_ for Jekyll
+## Features
 
-#### Demo: [https://mmarfil.com/](https://mmarfil.com/)
+- **Dark Mode Toggle**: A minimalist dark mode toggle that matches the theme's aesthetic
+- **Truncated Post Content**: Homepage shows post summaries with "Continue Reading" links instead of full content
+- **Clean Design**: Maintains the original clean, minimalist design
 
 ## Screenshot
 
 ![screenshot](screenshot/home.png)
 
-This Jekyll theme started as a port of [Cactus](https://github.com/eudicots/Cactus) to my own needs, but I ended up performing a lot more modifications than expected. Some people reached me out and asked if I could share it, so here we are.
+## Installation
 
-#### Disclaimer: I'm only a designer, so please don't expect the code to be pretty.
+1. Download this theme to your Hugo site's themes directory:
+```bash
+cd themes
+git clone https://github.com/chunsanger/microcactus.git microcactus
+```
+
+2. Add the theme to your site's configuration:
+```toml
+theme = "microcactus"
+```
 
 ## Usage
-To start your project, [fork this respository](https://github.com/mmarfil/neocactus/fork), put in your content, and go!
+
+This theme works with standard Hugo content organization. Create posts in the `content/post` directory with the usual Hugo front matter.
+
+## Credits
+
+This theme is a modified version of:
+- [theme-marfa-demicroed](https://github.com/washchuk/theme-marfa-demicroed) by washchuk
+- Originally inspired by [Cactus theme](https://github.com/eudicots/Cactus) for Jekyll
+
+## License
+
+MIT License
 
