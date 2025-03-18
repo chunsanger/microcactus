@@ -127,6 +127,16 @@ h2 {
 	margin-top: 2em;
 }
 
+/* Add more spacing for h2 headers in post items on the homepage */
+#post-list article.h-entry section.post-body > header > h2 {
+	margin-top: 2.5em;
+}
+
+/* Make sure the first post h2 doesn't have excessive top margin */
+#post-list li:first-child article.h-entry section.post-body > header > h2 {
+	margin-top: 1.5em;
+}
+
 h3 {
 	font-size: 20px;
 	font-weight: 500;
