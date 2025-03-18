@@ -138,18 +138,61 @@ h2 {
 }
 
 /* Add more spacing for standalone h2 headers in main content (like 'Main Apps') */
-.home #wrapper > h2, .home #wrapper > .h-feed > h2, .home #wrapper > .content > h2 {
+.home #wrapper > h2, 
+.home #wrapper > .h-feed > h2, 
+.home #wrapper > .content > h2,
+.home #wrapper > article > h2,
+.home #wrapper div > h2,
+.home #wrapper section > h2,
+.home .h-entry h2 {
 	margin-top: 2.5em;
 }
 
 /* Make sure the first main content h2 has appropriate spacing */
-.home #wrapper > h2:first-of-type, .home #wrapper > .content > h2:first-of-type {
+.home #wrapper > h2:first-of-type, 
+.home #wrapper > .content > h2:first-of-type,
+.home #wrapper > article > h2:first-of-type,
+.home #wrapper div > h2:first-of-type,
+.home #wrapper section > h2:first-of-type,
+.home .h-entry h2:first-of-type {
 	margin-top: 1.5em;
 }
 
 /* More general rule for h2 headers in homepage content */
 .home #wrapper h2:not(article h2) {
 	margin-top: 2.5em;
+}
+
+/* Fix for nested h2 headers in list items - target specific to hunsanger.blog structure */
+.home #post-list li article h2 {
+	margin-top: 2.5em !important;
+}
+
+/* First post h2 in the list */
+.home #post-list li:first-child article h2 {
+	margin-top: 1.5em !important;
+}
+
+/* Specific fix for h2 headers inside posts on homepage */
+.home #wrapper .h-entry .e-content h2 {
+	margin-top: 2em !important;
+}
+
+/* Direct targeting for 'Main Apps' and similar h2 headers 
+   This rule has very high specificity and uses !important to override any other rules */
+.home .e-content h2, 
+.home .h-entry h2,
+.home #wrapper h2[id],
+.home #wrapper > h2 {
+	margin-top: 2.5em !important;
+}
+
+/* Special handling for the first h2 after App Defaults 2024 */
+.home h1 + h2,
+.home h1 + p + h2,
+.home h1 + * + h2,
+.home h1 ~ h2:first-of-type {
+	margin-top: 1.5em !important;
 }
 
 h3 {
